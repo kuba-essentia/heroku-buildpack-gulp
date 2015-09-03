@@ -11,7 +11,7 @@ Heroku buildpack: Gulp
 ## Usage
 
 ```javascript
-gulp.task('heroku:production', function() {
+gulp.task('heroku:build', function() {
     // Run your build tasks here.
 });
 ```
