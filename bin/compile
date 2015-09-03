@@ -92,7 +92,7 @@ echo "export PATH=\"\$HOME/vendor/node/bin:\$HOME/bin:\$HOME/node_modules/.bin:\
         npm install gulp
     fi
     echo "-----> Found gulpfile, running gulp heroku:build task"
-    $build_dir/node_modules/.bin/gulp heroku:gulp
+    $build_dir/node_modules/.bin/gulp heroku:build
   else
     echo "-----> No gulpfile found"
   fi
