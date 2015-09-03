@@ -6,6 +6,9 @@ set -o pipefail   # don't ignore exit codes when piping output
 
 # Store the current path. We'll need to restore it later.
 original_path=$PATH
+status "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Showing original_path"
+echo original_path
+status "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Showing $PATH"
 echo $PATH
 
 # Configure directories
@@ -111,6 +114,9 @@ rm -r $build_dir/node_modules
 # Kill node with fire. We don't need it anymore.
 status "Killing node"
 PATH=$original_path
+status "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Showing original_path"
+echo original_path
+status "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Showing $PATH"
 echo $PATH
 rm -r $build_dir/vendor/node
 
