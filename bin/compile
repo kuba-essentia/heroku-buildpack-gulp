@@ -69,7 +69,7 @@ cd $build_dir
   # Make npm output to STDOUT instead of its default STDERR
   # Also install all dependencies, including dev ones.
   # We're going to clear them up anyway.
-  npm install --userconfig $build_dir/.npmrc 2>&1 | indent
+  npm install --userconfig $build_dir/.npmrc 2>&1 --production | indent
 )
 
 status "Cleaning up node-gyp and npm artifacts"
