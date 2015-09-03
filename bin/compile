@@ -80,11 +80,6 @@ status "Cleaning up node-gyp and npm artifacts"
 rm -rf "$build_dir/.node-gyp"
 rm -rf "$build_dir/.npm"
 
-# Update the PATH
-status "Building runtime environment"
-mkdir -p $build_dir/.profile.d
-echo "export PATH=\"\$HOME/vendor/node/bin:\$HOME/bin:\$HOME/node_modules/.bin:\$PATH\";" > $build_dir/.profile.d/nodejs.sh
-
 # Check and run gulp
 (
   if [ -f $build_dir/gulpfile.js ]; then
