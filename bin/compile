@@ -110,7 +110,8 @@ rm -r $build_dir/node_modules
 
 # Kill node with fire. We don't need it anymore.
 status "Killing node"
-export PATH=$original_path
+PATH=$original_path
+echo $PATH
 rm -r $build_dir/vendor/node
 
 status "Gulp build finished"
