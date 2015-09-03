@@ -115,5 +115,5 @@ echo "export PATH=\"\$HOME/vendor/node/bin:\$HOME/bin:\$HOME/node_modules/.bin:\
 rm -r $build_dir/node_modules
 
 # Kill node with fire. We don't need it anymore.
-PATH=`echo $PATH | sed -e 's/:\$HOME/vendor/node/bin:\$HOME/bin:\$HOME/node_modules/.bin:\$PATH\$//'`
+# PATH=`echo $PATH | sed -e 's/:\$HOME/vendor/node/bin:\$HOME/bin:\$HOME/node_modules/.bin:\$PATH\$//'`
 rm -r $build_dir/vendor/node
