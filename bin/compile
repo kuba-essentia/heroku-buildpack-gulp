@@ -86,7 +86,7 @@ rm -rf "$build_dir/.npm"
     fi
 
     # Install gulp locally if it isn't already
-    if ! test -d $build_dir/node_modules/.bin/gulp; then
+    if ! [ -d $build_dir/node_modules/.bin/gulp ]; then
         status "Gulp installation not found, running npm install gulp"
         protip "Consider adding specific gulp version to your package.json"
         npm install gulp
