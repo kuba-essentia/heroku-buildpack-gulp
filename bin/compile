@@ -59,7 +59,7 @@ PATH=$PATH:$build_dir/vendor/node/bin
 cd $build_dir
 
 # Set NODE_ENV variable to production (gulp file can have conditionals based on it)
-NODE_ENV=production
+export NODE_ENV=production
 
 # Scope config var availability only to `npm install`
 (
